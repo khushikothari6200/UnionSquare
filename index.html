@@ -1,334 +1,818 @@
-<!DOCTYPE html>
+<!doctype html>
 <html lang="en">
+
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Document</title>
-    <!-- Owl Carousel CSS -->
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css"/>
-<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css"/>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
 
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-SgOJa3DmI69IUzQ2PVdRZhwQ+dy64/BUtbMJw1MZ8t5HZApcHrRKUc4W0kG879m7" crossorigin="anonymous">
-    <link rel="stylesheet" href="./css/style.css">
+    <!-- Bootstrap CSS -->
+    <link type="text/css" rel="stylesheet" media="all" href="vendor/bootstrap/css/bootstrap.min.css">
+
+    <!-- Vendor/Plugins CSS -->
+    <link type="text/css" rel="stylesheet" media="all" href="vendor/animate-css/animate.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="vendor/aos/css/aos.css">
+    <link type="text/css" rel="stylesheet" media="all" href="vendor/slick/slick.css">
+    <link type="text/css" rel="stylesheet" media="all" href="vendor/slick/slick-theme.css">
+    <link type="text/css" rel="stylesheet" media="all" href="vendor/magnific-popup/magnific-popup.css">
+    <link type="text/css" rel="stylesheet" media="all"
+          href="https://fonts.googleapis.com/css?family=Montserrat:400,500,600,700%7COpen+Sans:400,600,700&display=swap">
+    <link type="text/css" rel="stylesheet" media="all"
+          href="vendor/material-design-iconic-font/css/material-design-iconic-font.min.css">
+    <link type="text/css" rel="stylesheet" media="all" href="fonts/flaticon/flaticon.css">
+
+    <!-- Bootbox Template CSS -->
+    <link type="text/css" rel="stylesheet" media="all" href="css/main.css">
+
+    <title>Bootbox - Agency HTML Template</title>
+    <!-- <link rel="apple-touch-icon" sizes="57x57" href="img/favicon/apple-icon-57x57.png">
+    <link rel="apple-touch-icon" sizes="60x60" href="img/favicon/apple-icon-60x60.png">
+    <link rel="apple-touch-icon" sizes="72x72" href="img/favicon/apple-icon-72x72.png">
+    <link rel="apple-touch-icon" sizes="76x76" href="img/favicon/apple-icon-76x76.png">
+    <link rel="apple-touch-icon" sizes="114x114" href="img/favicon/apple-icon-114x114.png">
+    <link rel="apple-touch-icon" sizes="120x120" href="img/favicon/apple-icon-120x120.png">
+    <link rel="apple-touch-icon" sizes="144x144" href="img/favicon/apple-icon-144x144.png">
+    <link rel="apple-touch-icon" sizes="152x152" href="img/favicon/apple-icon-152x152.png">
+    <link rel="apple-touch-icon" sizes="180x180" href="img/favicon/apple-icon-180x180.png">
+    <link rel="icon" type="image/png" sizes="192x192" href="img/favicon/android-icon-192x192.png">
+    <link rel="icon" type="image/png" sizes="32x32" href="img/favicon/favicon-32x32.png">
+    <link rel="icon" type="image/png" sizes="96x96" href="img/favicon/favicon-96x96.png">
+    <link rel="icon" type="image/png" sizes="16x16" href="img/favicon/favicon-16x16.png">
+    <link rel="manifest" href="img/favicon/manifest.json"> -->
+    <meta name="msapplication-TileColor" content="#ffffff">
+    <meta name="msapplication-TileImage" content="img/favicon/ms-icon-144x144.png">
+    <meta name="theme-color" content="#ffffff">
 </head>
-<body>
-    <!-- Header Start -->
+
+<body id="page-top">
+
+<!-- START Loader -->
+<!-- <div id="preloader">
+    <div class="blobs">
+        <div class="blob-center"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+        <div class="blob"></div>
+    </div>
+</div> -->
+<!-- END Loader -->
+
+<!-- START Header -->
 <header class="header position-relative">
-    <!-- Navigation Bar -->
-    <div class="navigation-bar sticky" id="affix">
-      <div class="container">
-        <nav class="navbar navbar-expand-lg navbar-light navbar-reset w-auto">
-          <!-- Logo -->
-          <a class="logo" href="index.html">
-            <img class="logo-default" src="images/logo.svg" alt="Bootbox" />
-          </a>
-  
-          <!-- Toggler -->
-          <button class="navbar-toggler border-0 p-0 d-block d-lg-none" type="button" data-bs-toggle="collapse" data-bs-target="#theme-navbar" aria-controls="theme-navbar" aria-expanded="false" aria-label="Toggle navigation">
-            <span class="navbar-toggler-icon"></span>
-          </button>
-  
-          <!-- Navbar Links -->
-          <div class="collapse navbar-collapse d-none d-lg-block" id="theme-navbar">
-            <ul class="navbar-nav ms-auto text-center text-lg-start">
-              <li class="nav-item dropdown position-relative">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown">
-                  Home
-                </a>
-                <!-- <ul class="dropdown-menu shadow-lg rounded-3 border-0">
-                  <li><a class="dropdown-item" href="#">Default Home</a></li>
-                  <li><a class="dropdown-item" href="#">One Page</a></li>
-                </ul> -->
-              </li>
-              
-              <li class="nav-item"><a class="nav-link" href="#price">Pricing</a></li>
-              <li class="nav-item active"><a class="nav-link" href="#about">About</a></li>
-              <li class="nav-item"><a class="nav-link" href="#service">Services</a></li>
-              <li class="nav-item dropdown">
-                <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">Pages</a>
-                <!-- <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Blog Page</a></li>
-                  <li><a class="dropdown-item" href="#">Blog Detail</a></li>
-                  <li><a class="dropdown-item" href="#">Features</a></li>
-                  <li><a class="dropdown-item" href="#">Error Page</a></li>
-                  <li><a class="dropdown-item" href="#">FAQ</a></li>
-                  <li><a class="dropdown-item" href="#">Sign Up</a></li>
-                  <li><a class="dropdown-item" href="#">Career</a></li>
-                  <li><a class="dropdown-item" href="#">Career Detail</a></li>
-                </ul> -->
-              </li>
-              <li class="nav-item"><a class="nav-link" href="#contact">Contact Us</a></li>
-            </ul>
-          </div>
-        </nav>
-      </div>
-    </div>
-  </header>
-  <!-- Header End -->
-  
-  <!-- Hero Start -->
-  <section class="hero-section py-5 bg-success text-white">
-    <div class="container mt-4 mt-lg-5">
-      <div class="row">
-        <!-- Text Column -->
-        <div class="col-lg-6 col-md-12 text-center text-lg-start mb-4 mb-lg-0">
-          <div class="hero-text pt-md-5 px-md-0 mb-4 p-4">
-            <h1>Crafting Digital Excellence with Precision & Creativity</h1>
-            <p>In a world where digital presence defines business success, Union Square Design delivers unmatched precision and creativity. We will transform your strategic visions into reality, ensuring every pixel perfectly aligns with your goals.</p>
-            <a href="#" class="btn btn-lg btn-light">Learn More</a>
-          </div>
-        </div>
-  
-        <!-- Image Column -->
-        <div class="col-lg-6 col-md-12 text-center d-none d-lg-block">
-          <div class="hero-image">
-            <img src="./images/business.svg" class="img-fluid" alt="business" />
-          </div>
-        </div>
-      </div>
-    </div>
-  </section>
-  <!-- Hero End -->
-  
-
-    <!-- Client Start -->
-    <section class="pt-5 mt-5 bg-white">
+    <!-- START Navigation -->
+    <div class="navigation-bar" id="affix">
         <div class="container">
-          <div class="headline"></div>
-          <h3 class="heading mb-3">Our Valued Partners</h3>
-      
-          <div class="owl-carousel owl-theme ">
-            <!-- Partner 1 -->
-            <div class="item ms-4">
-              <div class="partner-box d-flex justify-content-center align-items-center">
-                <img src="images/OneMain_logo 1.svg" alt="OneMain" />
-              </div>
-            </div>
-      
-            <!-- Partner 2 -->
-            <div class="item ms-4">
-              <div class="partner-box d-flex justify-content-center align-items-center">
-                <img src="images/doximity 1.svg" alt="Doximity" />
-              </div>
-            </div>
-      
-            <!-- Partner 3 -->
-            <div class="item ms-4">
-              <div class="partner-box d-flex justify-content-center align-items-center">
-                <img src="images/zeeto-transparent 1.svg" alt="Zeeto" />
-              </div>
-            </div>
-      
-            <!-- Partner 4 -->
-            <div class="item ms-4">
-              <div class="partner-box d-flex justify-content-center align-items-center">
-                <img src="images/stockwits 1.svg" alt="Stocktwits" />
-              </div>
-            </div>
-          </div>
+            <nav class="navbar navbar-expand-lg navbar-light navbar-reset">
+                <a class="logo" href="index.html">
+                    <img class="logo-default" src="img/logo.svg" alt="Bootbox">
+                </a>
+                <button class="navbar-toggler border-0 p-0" type="button" data-bs-toggle="collapse" data-bs-target="#theme-navbar" aria-controls="theme-navbar" aria-expanded="false" aria-label="Toggle navigation">
+                    <span class="navbar-toggler-lines"></span>
+                </button>
+                <div class="collapse navbar-collapse" id="theme-navbar">
+                    <ul class="navbar-nav ms-auto">
+                        <li class="nav-item dropdown active">
+                            <a class="nav-link"  role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Home</a>
+                            <!-- <div class="dropdown-menu">
+                                <a class="dropdown-item" href="index.html">Default Home</a>
+                                <a class="dropdown-item" href="index-onepage.html">One Page</a>
+                            </div> -->
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="price.html">Pricing</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="about.html">About</a>
+                        </li>
+                        <li class="nav-item dropdown">
+                            <a class="nav-link dropdown-toggle"  role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
+                            <div class="dropdown-menu">
+                                <a class="dropdown-item" href="blog-page.html">Blog Page</a>
+                                <a class="dropdown-item" href="blog-detail.html">Blog Detail</a>
+                                <a class="dropdown-item" href="features.html">Features</a>
+                                <a class="dropdown-item" href="error-page.html">Error Page</a>
+                                <a class="dropdown-item" href="faq.html">FAQ</a>
+                                <a class="dropdown-item" href="sign-up.html">Sign Up</a>
+                                <a class="dropdown-item" href="career.html">Career</a>
+                                <a class="dropdown-item" href="career-single.html">Career Detail</a>
+                            </div>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="service.html">Services</a>
+                        </li>
+                        <li class="nav-item">
+                            <a class="nav-link" href="contact.html">Contact Us</a>
+                        </li>
+                    </ul>
+                </div>
+            </nav>
         </div>
-      </section>
-      
-      
-    
-    <!-- Client End -->
+    </div>
+    <!-- END Navigation -->
+</header>
+<!-- END Header -->
 
-    <!-- About us Start -->
+<!-- START Section Hero -->
+<section class="section-hero">
+    <div class="banner position-relative">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-6 col-12 text-lg-start text-center" data-aos-delay="200">
+                    <div class="banner-text">
+                        <h1 class="mb-3 mb-md-4">Crafting Digital Excellence with Precision & Creativity</h1>
+                        <p>In a world where digital presence defines business success, Union Square Design delivers unmatched precision and creativity. We will transform your strategic visions into reality, ensuring every pixel perfectly aligns with your goals.</p>
+                        <a href="#" class="btn btn-lg btn-custom btn-light mt-4">Learn more</a>
+                    </div>
+                </div>
+                <div class="col-lg-6 col-12 d-none d-lg-block">
+                    <div class="banner-img animate__animated animate__zoomIn" data-aos="zoom-in" data-aos-delay="400" style="visibility: visible;">
+                        <img src="img/home/banner-vector.png" alt="business">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="curve-shape1">
+        <img src="./img/hero-v1.svg" alt="">
+    </div>
+    <div class="curve-shape2">
+        <img src="./img/hero-v2.svg" alt="" >
+    </div>
+
+</section>
+<!-- END Section Hero -->
+
+<!-- START Section About -->
+<section class="about-section bg-white">
     <div class="container">
-    <div class="row align-items-center">
-        <div class="col-lg-6 order-lg-last text-center text-lg-start ps-2">
-            <div class="title-left">
-                <div class="headline"></div>
-                <h3 class="heading">Strategic Design That Drives Real Results</h3>
+        <div class="clients">
+            <div class="client-slider" id="client-slider">
+                <div class="item">
+                    <img src="img/client-1.svg" alt="clients" class="cimg1">
+                </div>
+                <div class="item">
+                    <img src="img/client-2.svg" alt="clients">
+                </div>
+                <div class="item">
+                    <img src="img/client-3.svg" alt="clients">
+                </div>
+                <div class="item">
+                    <img src="img/client-4.svg" alt="clients">
+                </div>
+                <div class="item">
+                    <img src="img/client-1.svg" alt="clients"  class="cimg1">
+                </div>
+                <div class="item">
+                    <img src="img/client-2.svg" alt="clients">
+                </div>
+                <div class="item">
+                    <img src="img/client-3.svg" alt="clients">
+                </div>
+                <div class="item">
+                    <img src="img/client-4.svg" alt="clients">
+                </div>
                 
             </div>
-            <p>At Union Square Design, we're more than just designers. We're your strategic partners in digital growth. Our commitment to excellence and our focus on client success set us apart. From initial consultation to final implementation, our team works tirelessly to ensure your vision becomes a digital reality that exceeds expectations.</p>
-            <a href="#" class="btn btn-lg btn-custom mt-4">Explore Our Approach</a>
+        </div>        
+        <div class="row align-items-center">
+            <div class="col-lg-6 order-lg-last text-center text-lg-start">
+                <div class="title-left">
+                    <h3 class="top-sep text-primary">Strategic Design That Drives Real Results</h3>
+                </div>
+                <p>At Union Square Design, we're more than just designers. We're your strategic partners in digital growth. Our commitment to excellence and our focus on client success set us apart. From initial consultation to final implementation, our team works tirelessly to ensure your vision becomes a digital reality that exceeds expectations.</p>
+                <a href="#" class="btn btn-custom about-btn mt-4 fw-normal">Explore Our Approach</a>
+            </div>
+            <div class="col-lg-6 d-none d-lg-block order-lg-first">
+                <img src="img/pages/about-img2.png" class="img-fluid pr-lg-4" alt="Business">
+            </div>
         </div>
-        <div class="col-lg-6 d-none d-lg-block order-lg-first business-img">
-            <img src="images/About.svg" class="img-fluid pr-lg-4" alt="Business">
+        
+    </div>
+</section>
+<!-- END Section About -->
+
+<!-- START Section Services -->
+<section class="service-section">
+<img src="./img/service-bg-v1.svg" alt="" class="service-bg-v1">
+<img src="./img/service-bg-v2.svg" alt="" class="service-bg-v2">
+<img src="./img/service-bg-v3.svg" alt="" class="service-bg-v3">
+    <div class="service-container">
+        <div class="container sp-100-70">
+            <div class="row">
+                <div class="col-12">
+                    <div class="section-title title-left text-center text-lg-start">
+                        <h3 class="top-sep text-primary">Our services</h3>
+                        <p>At Union Square Design, we specialize in transforming your digital ideas into stunning realities. Explore our comprehensive range of services designed to elevate every aspect of your digital footprint.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="row g-3">
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-1.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Web Design & Development</h5>
+                        <p>Craft custom websites that captivate and engage your audience. Our team ensures your site is robust, responsive, and optimized for performance across all devices.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-2.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Ecommerce Web Design</h5>
+                        <p>Maximize your online sales with beautifully designed e-commerce platforms that offer seamless shopping experiences and are optimized for high conversion rates.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-3.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Corporate Website Design</h5>
+                        <p>Strengthen your business credibility with a sleek, professional corporate website that effectively communicates your brand's values and vision.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-4.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">WordPress Website Design</h5>
+                        <p>Take advantage of the world’s most popular CMS with a custom WordPress site that offers flexibility, ease of management, and scalability.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-5.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Shopify Website Design</h5>
+                        <p>Maximize your online sales with beautifully designed e-commerce platforms that offer seamless shopping experiences and are optimized for high conversion rates.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-6.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">User Interface Design</h5>
+                        <p>Design intuitive and engaging user interfaces that enhance user experience and drive interaction, making every interaction smooth and enjoyable.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-7.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Advertising Creatives & Banner Ads</h5>
+                        <p>Capture your audience’s attention with striking and effective ad creatives and banner ads designed to cut through the noise and maximize campaign ROI.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-8.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Presentation Deck Design</h5>
+                        <p>Communicate your ideas with impact through beautifully designed presentation decks that are clear, compelling, and memorable.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-9.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Branding & Logo Design</h5>
+                        <p>Build a unique brand identity with a logo and branding strategy that stands out, resonates with your audience, and fosters brand loyalty.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-10.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Graphic Design & Illustration</h5>
+                        <p>From brochures to business cards, our graphic design services create visually engaging materials that communicate your message and enhance your brand’s visual appeal.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-11.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Social Media Creative Design</h5>
+                        <p>Stop the scroll with eye-catching graphics and branded visuals tailored for every platform. We create cohesive, on-brand assets that drive engagement and elevate your online presence.</p>
+                    </div>
+                </div>
+                <div class="col-xl-3 col-md-6 col-12 mb-4 d-flex justify-content-center align-items-center">
+                    <div class="service-box">
+                        <div class="icon-box">
+                            <img src="./img/service-12.svg" alt="">
+                        </div>
+                        <h5 class="btm-sep">Mobile App Design</h5>
+                        <p>Deliver engaging mobile experiences with applications that combine intuitive usability and seamless functionality across iOS and Android.</p>
+                    </div>
+                </div>
+            </div>
+            
         </div>
     </div>
-    </div>
-    <!-- About us End -->
+</section>
+<!-- END Section Services -->
 
-
-    <!-- Services Start -->
-     <section class="pt-5 ">
-      <div class="service-container p-5">
-        <div class="container mt-5">
-          <div class="title-left">
-            <div class="headline"></div>
-            <h3 class="heading">Our Services</h3>
-            <p>At Union Square Design, we specialize in transforming your digital ideas into stunning realities. Explore our comprehensive range of services designed to elevate every aspect of your digital footprint.</p>
-          </div>
-          <div class="row">
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-1.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Web Design & Development</h5>
-                <div class="headline mb-2"></div>
-                <p class="mb-0">Craft custom websites that captivate and engage your audience. Our team ensures your site is robust, responsive, and optimized for performance across all devices.</p>
-              </div>
+<!-- START Section Projects -->
+<section class="project-section bg-white sp-100-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title title-left text-center text-lg-start">
+                    <h3 class="top-sep text-primary">Our Latest projects</h3>
+                    <p>Explore our portfolio to discover the dynamic, innovative solutions we’ve crafted for our clients. Each one reflects our commitment to excellence, meticulous attention to detail, and seamless fusion of design expertise with strategic insight to deliver outstanding results.</p>
+                </div>
             </div>
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-2.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Ecommerce Web Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Maximize your online sales with beautifully designed e-commerce platforms that offer seamless shopping experiences and are optimized for high conversion rates.</p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-3.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Corporate Website Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Strengthen your business credibility with a sleek, professional corporate website that effectively communicates your brand's values and vision.</p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-4.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">WordPress Website Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Take advantage of the world’s most popular CMS with a custom WordPress site that offers flexibility, ease of management, and scalability.</p>
-              </div>
-            </div>
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-5.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Shopify Website Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Maximize your online sales with beautifully designed e-commerce platforms that offer seamless shopping experiences and are optimized for high conversion rates.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-6.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">User Interface Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Design intuitive and engaging user interfaces that enhance user experience and drive interaction, making every interaction smooth and enjoyable.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-7.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Advertising Creatives & Banner Ads</h5>
-                <div class="headline mb-2"></div>
-                <p>Capture your audience’s attention with striking and effective ad creatives and banner ads designed to cut through the noise and maximize campaign ROI.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-8.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Presentation Deck Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Communicate your ideas with impact through beautifully designed presentation decks that are clear, compelling, and memorable.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-9.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Branding & Logo Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Build a unique brand identity with a logo and branding strategy that stands out, resonates with your audience, and fosters brand loyalty.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-10.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Graphic Design & Illustration</h5>
-                <div class="headline mb-2"></div>
-                <p>From brochures to business cards, our graphic design services create visually engaging materials that communicate your message and enhance your brand’s visual appeal.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-11.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Social Media Creative Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Stop the scroll with eye-catching graphics and branded visuals tailored for every platform. We create cohesive, on-brand assets that drive engagement and elevate your online presence.</p>
-              </div>
-            </div>
-            
-            <div class="col-12 col-sm-6 col-lg-3 pt-4 mt-4 position-relative">
-              <div class="service-icon">
-                <img src="./images/service-12.svg" alt="">
-              </div>
-              <div class="service-div p-3">
-                <h5 class="mt-4">Mobile App Design</h5>
-                <div class="headline mb-2"></div>
-                <p>Deliver engaging mobile experiences with applications that combine intuitive usability and seamless functionality across iOS and Android.</p>
-              </div>
-            </div>
-            
-          </div>
         </div>
-      </div>
-     </section>
-    <!-- Services End -->
-    
-    
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.5/dist/js/bootstrap.bundle.min.js" integrity="sha384-k6d4wzSIapyDyv1kpU366/PK5hCdSbCRGRCMv+eplOQJWyd1fbcAu9OCUj5zNLiq" crossorigin="anonymous"></script>
-    <!-- jQuery -->
-<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+        <div class="row d-none d-md-flex">
+            <div class="col-12">
+                <ul class="sorting mb-60">
+                    <li class="filter-btn active" data-id="*">
+                        <span>All</span>
+                    </li>
+                    
+                    <li class="filter-btn" data-filter=".graphicdesign">
+                        <span>Graphic Design</span>
+                    </li>
+                    <li class="filter-btn" data-filter=".seo">
+                        <span>Advertising Creative </span>
+                    </li>
+                    <li class="filter-btn" data-filter=".digitalmarketing">
+                        <span>Business Development Creative</span>
+                    </li>
+                </ul>
+            </div>
+        </div>
+        <div class="row masonary-wrap">
+            <div class="col-lg-4 col-md-6 col-12 port-item mb-3 webdesign digitalmarketing">
+                <div class="project">
+                    <div class="proj-img">
+                        <img src="img/project/portfolio-1.jpg" alt="project">
+                        <div class="proj-overlay">
+                            <h5>Market research</h5>
+                            <a href="img/project/portfolio-1.jpg" class="pop-btn">
+                                <i class="zmdi zmdi-zoom-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 port-item mb-3 seo graphicdesign">
+                <div class="project">
+                    <div class="proj-img">
+                        <img src="img/project/portfolio-2.jpg" alt="project">
+                        <div class="proj-overlay">
+                            <h5>Market research</h5>
+                            <a href="img/project/portfolio-2.jpg" class="pop-btn">
+                                <i class="zmdi zmdi-zoom-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 port-item mb-3 webdesign graphicdesign">
+                <div class="project">
+                    <div class="proj-img">
+                        <img src="img/project/portfolio-3.jpg" alt="project">
+                        <div class="proj-overlay">
+                            <h5>Market research</h5>
+                            <a href="img/project/portfolio-3.jpg" class="pop-btn">
+                                <i class="zmdi zmdi-zoom-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 port-item mb-3 seo digitalmarketing">
+                <div class="project">
+                    <div class="proj-img">
+                        <img src="img/project/portfolio-4.jpg" alt="project">
+                        <div class="proj-overlay">
+                            <h5>Digital marketing</h5>
+                            <a href="img/project/portfolio-4.jpg" class="pop-btn">
+                                <i class="zmdi zmdi-zoom-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 port-item mb-3 webdesign digitalmarketing">
+                <div class="project">
+                    <div class="proj-img">
+                        <img src="img/project/portfolio-5.jpg" alt="project">
+                        <div class="proj-overlay">
+                            <h5>Web design</h5>
+                            <a href="img/project/portfolio-5.jpg" class="pop-btn">
+                                <i class="zmdi zmdi-zoom-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 port-item mb-3 seo graphicdesign">
+                <div class="project">
+                    <div class="proj-img">
+                        <img src="img/project/portfolio-6.jpg" alt="project">
+                        <div class="proj-overlay">
+                            <h5>SEO optimize</h5>
+                            <a href="img/project/portfolio-6.jpg" class="pop-btn">
+                                <i class="zmdi zmdi-zoom-in"></i>
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
+<!-- END Section Projects -->
 
-<!-- Owl Carousel JS -->
-<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
-<script>
-    $(document).ready(function(){
-      $(".owl-carousel").owlCarousel({
-        loop: true,
-        // margin: 20,
-        // nav: true,
-        // dots: true,
-        autoplay: true,
-        autoplayTimeout: 3000,
-        autoplayHoverPause: true,
-        responsive: {
-          0: {
-            items: 1 // Mobile
-          },
-          768: {
-            items: 2 // Tablet
-          },
-          1024: {
-            items: 4 // Laptop & above
-          }
-        }
-      });
-    });
-  </script>
-  
-  <script src="./javascript/script.js"></script>
+<!-- START Section Counter -->
+<!-- <section class="sp-100-70 bg-gradi counters-section" id="counters">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h3 class="top-c-sep c-white">Design Success, Real Results</h3>
+                </div>
+            </div>
+        </div>
+        <div class="row align-items-center justify-content-center">
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="counter-box d-flex d-lg-block">
+                    <div class="icon-box mb-3">
+                        <img src="./img/counter-1.svg" alt="" class="img-fluid">
+                    </div>
+                    <div class="ms-5 ms-lg-0 pt-1 pt-lg-0">
+                        <h3 class="mb-2 mt-5 count" data-count="75">0</h3>
+                        <p class="c-black text-capitalize">Websites Designed & Launched</p>
+                        <p class="fw-normal">From custom corporate sites to full-scale e-commerce builds, our team has designed and deployed dozens of high-performance websites tailored to our clients’ unique goals.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="counter-box d-flex d-lg-block">
+                    <div class="icon-box mb-3">
+                        <img src="./img/counter-2.svg" alt="">
+                    </div>
+                    <div class="ms-5 ms-lg-0 pt-1 pt-lg-0">
+                        <h3 class="mb-2 mt-5 count" data-count="120">0</h3>
+                        <p class="c-black text-capitalize">UI/UX Projects Completed</p>
+                        <p class="fw-normal">We’ve helped product teams enhance user engagement with clean, intuitive interfaces, from mobile apps and portals to internal dashboards and consumer-facing platforms alike.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="counter-box d-flex d-lg-block">
+                    <div class="icon-box mb-3">
+                        <img src="./img/counter-3.svg" alt="">
+                    </div>
+                    <div class="ms-5 ms-lg-0 pt-1 pt-lg-0">
+                        <h3 class="mb-2 mt-5 count" data-count="300">0</h3>
+                        <p class="c-black text-capitalize">Marketing Assets Created</p>
+                        <p class="fw-normal">From ad creatives and banners to email templates and pitch decks, we design assets that power real growth and ROI for all of our customers.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-3 col-md-6 mb-3">
+                <div class="counter-box d-flex d-lg-block">
+                    <div class="icon-box mb-3">
+                        <img src="./img/counter-4.svg" alt="">
+                    </div>
+                    <div class="ms-5 ms-lg-0 pt-1 pt-lg-0">
+                        <h3 class="mb-2 mt-5 count" data-count="10">0</h3>
+                        <p class="c-black text-capitalize">Global Clients</p>
+                        <p class="fw-normal">We bring over a decade of delivering high-impact design solutions to startups, scale-ups, and enterprise teams.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- END Section Counter -->
+
+<!-- START Section Team -->
+<!-- <section class="team-section bg-white sp-100-70">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title title-left text-center text-lg-start">
+                    <h3 class="top-sep">Meet Our Experts</h3>
+                    <p>Lorem ipsum dolor sit amet, consectadetudzdae rcquisc adipiscing elit. Aenean socada commodo
+                        ligaui egets dolor. Nullam quis ante tiam sit ame orci eget erovtiu faucid.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                        <span class="socials d-inline-block">
+                            <a href="#" class="zmdi zmdi-facebook"></a>
+                            <a href="#" class="zmdi zmdi-twitter"></a>
+                            <a href="#" class="zmdi zmdi-google"></a>
+                            <a href="#" class="zmdi zmdi-instagram"></a>
+                        </span>
+                        <span class="img-holder d-inline-block">
+                            <img src="img/team/team_1.jpg" alt="Team">
+                        </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Ray Jhonson</h5>
+                        <p class="text-uppercase mb-0">Senior Developer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                        <span class="socials d-inline-block">
+                            <a href="#" class="zmdi zmdi-facebook"></a>
+                            <a href="#" class="zmdi zmdi-twitter"></a>
+                            <a href="#" class="zmdi zmdi-google"></a>
+                            <a href="#" class="zmdi zmdi-instagram"></a>
+                        </span>
+                        <span class="img-holder d-inline-block">
+                            <img src="img/team/team_2.jpg" alt="Team">
+                        </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Serena Whatson</h5>
+                        <p class="text-uppercase mb-0">UI/UX Designer</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-md-6 col-lg-4 mb-30">
+                <div class="team-item">
+                    <div class="mb-30 position-relative d-flex align-items-center">
+                        <span class="socials d-inline-block">
+                            <a href="#" class="zmdi zmdi-facebook"></a>
+                            <a href="#" class="zmdi zmdi-twitter"></a>
+                            <a href="#" class="zmdi zmdi-google"></a>
+                            <a href="#" class="zmdi zmdi-instagram"></a>
+                        </span>
+                        <span class="img-holder d-inline-block">
+                            <img src="img/team/team_3.jpg" alt="Team">
+                        </span>
+                    </div>
+                    <div class="team-content">
+                        <h5 class="mb-2">Dave Serene</h5>
+                        <p class="text-uppercase mb-0">CEO</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- END Section Team -->
+
+<!-- START Section Testimonials -->
+<!-- <section class="sp-100 overlay-bg bg-light testimonial-section">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title">
+                    <h3 class="top-c-sep">Success stories</h3>
+                    <p>Lorem ipsum dolor sit detudzdae amet, rcquisc adipiscing elit. Aenean socada commodo
+                        ligaui egets dolor. Nullam quis ante tiam sit ame orci eget erovtiu faucid.</p>
+                </div>
+            </div>
+        </div>
+        <div id="testimonial-slider" class="testimonial-slider mb-0 text-center">
+            <div class="testimonial-item">
+                <div class="img-holder mx-auto mx-md-0">
+                    <img src="img/testimonial/testi1.png" alt="Client">
+                </div>
+                <div class="testimonial-content text-center text-md-start">
+                    <h5 class="btm-sep btm-sep-center pb-3 mb-3">Angela Whatson</h5>
+                    <p class="rating text-warning">
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star-half"></i>
+                    </p>
+                    <p class="mb-0">Lorem ipsum dolor sit detudzdae amet, rcquisc adipiscing elit.
+                        Aenean amet socada commodo sit ame orci eget ero ligaui egets dolor.</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="img-holder mx-auto mx-md-0">
+                    <img src="img/testimonial/testi2.png" alt="Client">
+                </div>
+                <div class="testimonial-content text-center text-md-start">
+                    <h5 class="btm-sep btm-sep-center pb-3 mb-3">Jenna Aerys</h5>
+                    <p class="rating text-warning">
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                    </p>
+                    <p class="mb-0">Lorem ipsum dolor sit detudzdae amet, rcquisc adipiscing elit.
+                        Aenean amet socada commodo sit ame orci eget ero ligaui egets dolor.</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="img-holder mx-auto mx-md-0">
+                    <img src="img/testimonial/testi3.png" alt="Client">
+                </div>
+                <div class="testimonial-content text-center text-md-start">
+                    <h5 class="btm-sep btm-sep-center pb-3 mb-3">Jhon Dure</h5>
+                    <p class="rating text-warning">
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star-border"></i>
+                    </p>
+                    <p class="mb-0">Lorem ipsum dolor sit detudzdae amet, rcquisc adipiscing elit.
+                        Aenean amet socada commodo sit ame orci eget ero ligaui egets dolor.</p>
+                </div>
+            </div>
+            <div class="testimonial-item">
+                <div class="img-holder mx-auto mx-md-0">
+                    <img src="img/testimonial/testi4.png" alt="Client">
+                </div>
+                <div class="testimonial-content text-center text-md-start">
+                    <h5 class="btm-sep btm-sep-center pb-3 mb-3">Enna Whatson</h5>
+                    <p class="rating text-warning">
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star"></i>
+                        <i class="zmdi zmdi-star-half"></i>
+                    </p>
+                    <p class="mb-0">Lorem ipsum dolor sit detudzdae amet, rcquisc adipiscing elit.
+                        Aenean amet socada commodo sit ame orci eget ero ligaui egets dolor.</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- END Section Testimonials -->
+
+<!-- START Section Blog -->
+<!-- <section class="blog-section sp-100-70 bg-w overflow-hidden">
+    <div class="container">
+        <div class="row">
+            <div class="col-12">
+                <div class="section-title title-left text-center text-lg-start">
+                    <h3 class="top-sep">Latest posts</h3>
+                    <p>Lorem ipsum dolor sit amet, consectadetudzdae rcquisc adipiscing elit. Aenean socada commodo
+                        ligaui egets dolor. Nullam quis ante tiam sit ame orci eget erovtiu faucid.</p>
+                </div>
+            </div>
+        </div>
+        <div class="row justify-content-center">
+            <div class="col-lg-4 col-md-6 col-12 mb-30">
+                <div class="blog-item">
+                    <div class="img-holder">
+                        <img src="img/blog/blog-5.jpg" alt="vector">
+                        <span class="date">20<br>may</span>
+                    </div>
+                    <div class="blog-content">
+                        <h5><a href="blog-detail.html">Increase your web traffic with Bootbox.</a></h5>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, cons rcquisc adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-30">
+                <div class="blog-item">
+                    <div class="img-holder">
+                        <img src="img/blog/blog-1.jpg" alt="vector">
+                        <span class="date">24<br>may</span>
+                    </div>
+                    <div class="blog-content">
+                        <h5><a href="blog-detail.html">Excepteur sint ocae ecat alit if cupidatat.</a></h5>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, cons rcquisc adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+            <div class="col-lg-4 col-md-6 col-12 mb-30">
+                <div class="blog-item">
+                    <div class="img-holder">
+                        <img src="img/blog/blog-6.jpg" alt="vector">
+                        <span class="date">10<br>may</span>
+                    </div>
+                    <div class="blog-content">
+                        <h5><a href="blog-detail.html">Increase your web presence.</a></h5>
+                        <p class="mb-2">Lorem ipsum dolor sit amet, cons rcquisc adipiscing elit.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</section> -->
+<!-- END Section Blog -->
+
+<!-- START Section CTA -->
+<!-- <section class="cta-section position-relative">
+    <div class="container">
+        <div class="cta-box bg-white" data-aos="fade-up" data-aos-delay="200">
+            <h3>Start growing with Bootbox today!</h3>
+            <p class="mb-30 mx-auto">Lorem ipsum dolor sit amet, consecta detudzdae rcquisc adipiscing elit. Aenean
+                socada commodo sit ame orci eget ero ligaui egets dolor. Nullam quis ante tiam sit ame
+                orci eget erovtiu faucid.
+            </p>
+            <a href="#" class="btn btn-lg btn-custom">Get free estimate <i
+                    class="zmdi zmdi-long-arrow-right ms-2"></i></a>
+        </div>
+    </div>
+</section> -->
+<!-- END Section CTA -->
+
+<!-- START Footer -->
+<!-- <footer class="bg-white footer">
+    <div class="container">
+        <div class="footer-top">
+            <div class="row">
+                <div class="col-md-6 col-xl-3 mb-30">
+                    <div class="mb-30">
+                        <img class="logo-footer" src="img/logo.svg" alt="Bootbox">
+                    </div>
+                    <p class="mb-30 c-white">Lorem ipsum dolor sit amet, cons ectadetudzdae rcquisc adipiscing elit.
+                        Aenean socada commodo dolor.</p>
+                    <div class="socials">
+                        <a href="#" class="zmdi zmdi-facebook"></a>
+                        <a href="#" class="zmdi zmdi-twitter"></a>
+                        <a href="#" class="zmdi zmdi-google"></a>
+                        <a href="#" class="zmdi zmdi-instagram"></a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-30">
+                    <h4 class="btm-sep pb-3 mb-30 c-white fw-semibold">Our company</h4>
+                    <div class="foot-links">
+                        <a href="about.html">About Company</a>
+                        <a href="#">Testimonials</a>
+                        <a href="blog-page.html">Our blog</a>
+                        <a href="faq.html">FAQ</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-30">
+                    <h4 class="btm-sep pb-3 mb-30 c-white fw-semibold">Product</h4>
+                    <div class="foot-links">
+                        <a href="#">Integrations</a>
+                        <a href="price.html">Pricing</a>
+                        <a href="#">Documentation</a>
+                        <a href="#">Release Notes</a>
+                    </div>
+                </div>
+                <div class="col-md-6 col-xl-3 mb-30">
+                    <h4 class="btm-sep pb-3 mb-30 c-white fw-semibold">Contact us</h4>
+                    <ul class="contact-info mt-4">
+                        <li>
+                            <i class="zmdi zmdi-pin"></i>
+                            ABC, North Valley, <br> New York 160065
+                        </li>
+                        <li>
+                            <i class="zmdi zmdi-email"></i>
+                            Support@company.com
+                        </li>
+                        <li>
+                            <i class="zmdi zmdi-phone"></i>
+                            123-456-7890
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+        <div class="copyright text-center c-white">
+            ©2024 - Bootbox. <span class="d-none d-md-inline-block">All rights reserved.</span>
+        </div>
+    </div>
+</footer> -->
+<!-- END Footer -->
+
+<!-- START Scroll-To-Top -->
+<!-- <a id="back-top" class="back-top" >
+    <span class="zmdi zmdi-triangle-up mb-1"></span>
+</a> -->
+<!-- END Scroll-To-Top -->
+
+<!-- Global Required JS -->
+<script src="vendor/jquery/jquery.min.js"></script>
+<script src="vendor/bootstrap/js/bootstrap.bundle.min.js"></script>
+
+<!-- Vendor/Plugins JS -->
+<script src="vendor/slick/slick.min.js"></script>
+<script src="vendor/isotope-layout/isotope.pkgd.min.js"></script>
+<script src="vendor/magnific-popup/jquery.magnific-popup.min.js"></script>
+<script src="vendor/aos/js/aos.js"></script>
+<!-- Bootbox Template JS -->
+<script src="js/main.js"></script>
 </body>
+
 </html>
