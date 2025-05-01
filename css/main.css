@@ -54,13 +54,17 @@ vertical-align: middle;
 .f-12{
   font-size: 12px !important;
 }
+.f-32{
+  font-size: 32px !important;
+}
 .g-line{
   background-color: #68990F;
   height: 3px;
   width: 40px;
 }
 .hero-btn{
-  font-family: "Figtree", sans-serif;;
+  /* font-family: "Figtree", sans-serif; */
+  
 font-weight: 400;
 font-size: 18px;
 line-height: 100%;
@@ -72,7 +76,16 @@ color: #33561D;
   background-color: #7BC34E !important;
   color: #ffffff;
 }
-
+.head-title{
+font-weight: 700;
+font-size: 38px;
+line-height: 50.54px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: uppercase;
+color: #FFFFFF;
+}
 /* ===== Navbar ====== */
 .navbar-reset {
   padding: 1.3rem 0;
@@ -178,7 +191,8 @@ color: #33561D;
   width: auto;
   height: auto;
   content: "\f2f9";
-  font-family: "Material-Design-Iconic-Font";
+  /* font-family: "Material-Design-Iconic-Font"; */
+  
 }
 @media (max-width: 991.98px) {
   .navbar .dropdown-toggle:after {
@@ -432,7 +446,8 @@ footer.footer {
 .footer-top .foot-links a:before {
   font-size: 17px;
   content: "\f2fb";
-  font-family: "Material-Design-Iconic-Font";
+  /* font-family: "Material-Design-Iconic-Font"; */
+  
   position: absolute;
   top: 2px;
   left: 0;
@@ -2201,7 +2216,8 @@ color: #577B15 !important;
 /* ===== RESET CSS ====== */
 body {
   font-size: 16px;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  font-family: "Arial";
   background-color: #fff;
   font-weight: 400;
   color: #4f5464;
@@ -2254,7 +2270,8 @@ ul, li {
 }
 
 p {
-  font-family: "Open Sans", sans-serif;
+  /* font-family: "Open Sans", sans-serif; */
+  
   font-size: 16px;
   line-height: 24px;
   margin-top: 0;
@@ -2300,7 +2317,8 @@ h4,
 h5,
 h6 {
   color: #101f41;
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  
   font-weight: 500;
   margin-top: 0;
   margin-bottom: 15px;
@@ -2457,7 +2475,8 @@ textarea {
 
 /* ===== Custom Button ===== */
 .btn {
-  font-family: "Montserrat", sans-serif;
+  /* font-family: "Montserrat", sans-serif; */
+  
   text-transform: capitalize;
   padding: 10px 30px;
   border-radius: 5px;
@@ -2581,7 +2600,8 @@ textarea {
 [type=checkbox]:not(:checked) + label:after,
 [type=checkbox]:checked + label:after {
   content: "\f26b";
-  font-family: "Material-Design-Iconic-Font";
+  /* font-family: "Material-Design-Iconic-Font"; */
+  
   position: absolute;
   font-size: 13px;
   line-height: 1.2em;
@@ -2796,13 +2816,13 @@ textarea.form-control {
   border-radius: 10px;
 }
 
-.ff-open-sans {
+/* .ff-open-sans {
   font-family: "Open Sans", sans-serif;
 }
 
 .ff-montserrat {
   font-family: "Montserrat", sans-serif;
-}
+} */
 
 /* ===== Headings & Titles ===== */
 .subtitle-left {
@@ -2999,7 +3019,8 @@ textarea.form-control {
   margin-left: -20px;
   content: "\f26b";
   font-weight: 600;
-  font-family: "Material-Design-Iconic-Font";
+  /* font-family: "Material-Design-Iconic-Font"; */
+  
   color: #68990F;
 }
 
@@ -3017,7 +3038,8 @@ textarea.form-control {
   margin-left: -20px;
   content: "\f26b";
   font-weight: 600;
-  font-family: "Material-Design-Iconic-Font";
+  /* font-family: "Material-Design-Iconic-Font"; */
+  
   color: #fff;
   height: 18px;
   width: 18px;
@@ -3055,7 +3077,7 @@ textarea.form-control {
 
 /* ===== Breadcrumb-Section ===== */
 .breadcrumb-section {
-  background-image: linear-gradient(to right, rgb(78, 99, 215) 0%, rgb(118, 191, 233) 100%);
+  background-image: linear-gradient(to right, #68990F, #A1CB55);
   padding: 100px 0 50px;
   position: relative;
   overflow: hidden;

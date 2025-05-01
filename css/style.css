@@ -23,6 +23,9 @@ letter-spacing: 0%;
 vertical-align: middle;
 
 }
+.form-bg{
+  background-color: #7BAE1D !important;
+}
 .btn-custom{
     background-color: #7BC34E;
     color: #ffffff;
