@@ -48,6 +48,12 @@ vertical-align: middle;
 .f-16{
   font-size: 16px !important;
 }
+.f-14{
+  font-size: 14px !important;
+}
+.f-12{
+  font-size: 12px !important;
+}
 .g-line{
   background-color: #68990F;
   height: 3px;
@@ -384,7 +390,7 @@ footer {
   padding-top: 150px;
 }
 footer.footer {
-  background-image: url(../img/shapes/footer-bg.svg);
+  background-image: url(../img/footer-bg-v.svg);
   background-size: cover;
   background-repeat: no-repeat;
   background-position: top center;
@@ -681,19 +687,6 @@ vertical-align: middle;
   position: relative;
   z-index: 0;
 }
-.counters-section:before {
-  position: absolute;
-  content: "";
-  top: 0;
-  left: 0;
-  width: 100%;
-  height: 100%;
-  background-image: url(../img/shapes/counter-bg.svg);
-  background-size: cover;
-  background-repeat: no-repeat;
-  background-position: top center;
-  z-index: -1;
-}
 
 .counter-box {
   background-color: #fff;
@@ -734,39 +727,87 @@ vertical-align: middle;
 .counter-box:hover * {
   color: #fff !important;
 }
-.counter-box p {
-  font-weight: 600;
-}
+
 .counter-box .count {
   font-family: Arial;
 font-weight: 700;
-font-size: 35px;
+font-size: 35px !important;
 line-height: 46.55px;
 letter-spacing: 0%;
 vertical-align: middle;
 text-transform: capitalize;
+color: #33561D;
+}
+.counter-box .icon-box img {
+  width: 50px;
+    height: 70px;
+  max-width: 60px;
+  max-height: 80px;
+  object-fit: contain; /* keeps aspect ratio and fits the image inside */
+  display: block;
+}
+.counter-box .icon-box {
+  width: 60px;
+  height: 80px;
+}
+
+@media (max-width: 768px) {
+  .counter-box .icon-box {
+    width: 100%;
+    height: 100%;
+    object-fit: contain;
+  }
+}
+
+.count-title{
+  font-family: Arial;
+font-weight: 700;
+font-size: 16px !important;
+line-height: 24px;
+letter-spacing: 0%;
+text-transform: capitalize;
+color: #33561D;
+white-space: nowrap;
+}
+.count-content{
+  font-family: Arial;
+font-weight: 400;
+font-size: 14 !important;
+line-height: 20px;
+letter-spacing: 0%;
+color: #577B15;
 
 }
 .counter-box .count:after {
   content: "+";
 }
 
-/* ===== Tesimonial Section ===== */
-.testimonial-saas .testimonial-slider .testimonial-item {
-  box-shadow: 0 0 40px rgba(16, 31, 65, 0.05);
+.counter-v1{
+  position: absolute;
+}
+.counter-v2{
+  position: absolute;
+  right: 0%;
 }
 
+/* ===== Tesimonial Section ===== */
+.testimonial-section{
+  position: relative;
+  overflow: hidden;
+  z-index: -1;
+  background-color: #FAFFF1;
+}
 .testimonial-slider {
   margin: -15px;
 }
 .testimonial-slider .testimonial-item {
-  margin: 15px;
+  margin: 10px;
   text-align: left;
   background-color: #fff;
-  border-radius: 10px;
+  border-radius: 6px;
   padding: 32px;
   margin-bottom: 35px;
-  box-shadow: 0 0 40px rgba(16, 31, 65, 0.05);
+  min-height: 600px;
 }
 @media (min-width: 768px) {
   .testimonial-slider .testimonial-item {
@@ -776,10 +817,11 @@ text-transform: capitalize;
 }
 .testimonial-slider .testimonial-item .img-holder {
   height: 100px;
-  width: 100px;
+  width: 100%;
   border-radius: 10px;
   margin-bottom: 20px;
   overflow: hidden;
+  object-fit: contain;
 }
 @media (min-width: 768px) {
   .testimonial-slider .testimonial-item .img-holder {
@@ -796,8 +838,9 @@ text-transform: capitalize;
   line-height: 1;
   font-size: 0;
   border-radius: 20px;
+  display: none  !important;
 }
-.testimonial-slider .slick-dots li {
+/* .testimonial-slider .slick-dots li {
   position: relative;
   display: inline-block;
   width: 9px;
@@ -824,11 +867,28 @@ text-transform: capitalize;
   .testimonial-saas .testimonial-item.slick-center {
     opacity: 1;
   }
-}
+} */
 .testimonial-content .rating {
   font-size: 20px;
-  margin-top: 22px;
+  margin-top: 10px;
   margin-bottom: 10px;
+}
+.testimonial-content h5 {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 20px !important;
+  line-height: 27.93px;
+  letter-spacing: 0%;
+  text-transform: capitalize;
+  
+}
+.testimonial-content p {
+  font-family: Arial;
+font-weight: 400;
+font-size: 16px !important;
+line-height: 24px;
+letter-spacing: 0%;
+color: #333333 !important;
 }
 
 .testimonial-saas {
@@ -837,7 +897,7 @@ text-transform: capitalize;
 }
 .testimonial-saas:after {
   content: "";
-  background-image: url(../img/home-saas/testi-bg.svg);
+  /* background-image: url(../img/home-saas/testi-bg.svg); */
   background-repeat: no-repeat;
   background-position: center center;
   background-size: cover;
@@ -859,6 +919,41 @@ text-transform: capitalize;
   border-radius: 10px;
   text-align: center;
   padding: 38px 32px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+.cta-section .cta-box h3 {
+  font-family: Arial;
+font-weight: 400;
+font-size: 32px !important;
+line-height: 35px;
+letter-spacing: 0%;
+text-align: center;
+vertical-align: middle;
+text-transform: capitalize;
+color: #33561D !important;
+}
+.cta-section .cta-box p {
+  font-family: Arial;
+  max-width: 850px !important;
+font-weight: 400;
+font-size: 16px !important;
+line-height: 24px;
+letter-spacing: 0%;
+text-align: center;
+color: #333333 !important;
+}
+.cta-section .cta-box h6 {
+  font-family: Arial;
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 24px;
+  letter-spacing: 0%;
+  text-align: center;
+  color: #333333 !important;
+  
 }
 @media (min-width: 768px) {
   .cta-section .cta-box {
@@ -948,6 +1043,7 @@ line-height: 27.93px;
 letter-spacing: 0%;
 text-transform: capitalize;
 white-space: nowrap;
+color: #33561D !important;
 /* margin-top: 15px; */
 
 }
@@ -957,7 +1053,7 @@ font-weight: 400;
 font-size: 14px !important;
 line-height: 20px;
 letter-spacing: 0%;
-color: #4F5464 !important;
+color: #577B15 !important;
 
 }
 .service-box:hover {
@@ -3049,9 +3145,9 @@ textarea.form-control {
 .socials a {
   width: 35px;
   height: 35px;
-  background-color: #6893e1;
+  background-color:#7BC34E !important;
   border-radius: 50%;
-  box-shadow: 0 3px 2px 0 #516cd9;
+  box-shadow: 0 3px 2px 0 #33561D;
   text-align: center;
   color: #fff;
   padding-top: 10px;
@@ -3061,7 +3157,7 @@ textarea.form-control {
   text-decoration: none;
 }
 .socials a:hover {
-  background-color: #679fe3;
+  background-color: #7BAE1D;
 }
 
 /* ===== Overlay Background ===== */
