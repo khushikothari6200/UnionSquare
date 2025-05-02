@@ -3046,7 +3046,7 @@ textarea.form-control {
   margin-left: -20px;
   content: "\f26b";
   font-weight: 600;
-  /* font-family: "Material-Design-Iconic-Font"; */
+  font-family: "Material-Design-Iconic-Font";
   
   color: #fff;
   height: 18px;
