@@ -622,9 +622,10 @@ letter-spacing: 0%;
 text-transform: capitalize;
 
 }
-@media (min-width: 576px) {
+@media (max-width: 576px) {
   .banner-text h1 {
     font-size: 40px;
+    line-height: 45px;
   }
 }
 @media (min-width: 768px) {
@@ -787,7 +788,7 @@ color: #33561D;
 font-weight: 700;
 font-size: 16px !important;
 line-height: 24px;
-letter-spacing: 0%;
+letter-spacing: -0.2px;;
 text-transform: capitalize;
 color: #33561D;
 /* white-space: nowrap; */
@@ -815,7 +816,7 @@ color: #577B15;
 @media (max-width: 1400px){
   
   .counter-box {
-    width: 100%;
+    /* width: 100%; */
     height: 420px;
     padding: 20px;
   }
@@ -826,7 +827,7 @@ color: #577B15;
 }
 @media (max-width: 1200px) {
   .counter-box {
-    width: 100%;
+    /* width: 100%; */
     height: 100%;
     padding: 20px;
   }
@@ -1042,6 +1043,12 @@ color: #333333 !important;
   position: absolute;
 }
 
+.testimonial-slider {
+  display: flex;
+  flex-wrap: nowrap;
+  overflow: hidden;
+}
+
 
 /* ===== CTA Section ===== */
 .cta-section {
@@ -1127,7 +1134,7 @@ color: #333333 !important;
   width: 413px;
 height: 398px;
 /* top: 1848px; */
-z-index: 0;
+z-index: -1;
 /* opacity: 0.3; */
 
 }
@@ -1168,6 +1175,7 @@ z-index: 0;
   width: 319px;
   min-height: 188px;
   max-height: 188px;
+  z-index: 1;
 }
 .service-box h5{
   font-family: Arial;
@@ -1447,7 +1455,7 @@ color: #577B15 !important;
 }
 @media (min-width: 576px) {
   .section-hero-saas .banner-text h1 {
-    font-size: 40px;
+    font-size: 30px;
   }
 }
 @media (min-width: 768px) {

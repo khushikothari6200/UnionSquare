@@ -124,42 +124,44 @@
 
   /*(6) Testimonial Slider
    ========================================================================== */
-  var testimonial_slider = $('#testimonial-slider');
-  if (testimonial_slider.length > 0) {
-    testimonial_slider.slick({
-      infinite: true,
-      slidesToShow: 1,
-      slidesToScroll: 1,
-      dots: true,
-      arrows: false,
-      autoplay: false,
-      mobileFirst:true,
-      responsive: [
-        {
-          breakpoint: 767,
-          settings: {
-            slidesToShow: 1
-          }
-        },
-        {
-          breakpoint: 991,
-          settings: {
-            slidesToShow: 2,
-            centerPadding:'0',
-            centerMode:true,
-          }
-        },
-        {
-          breakpoint: 1200,
-          settings: {
-            slidesToShow: 3,
-            centerPadding:'0',
-            centerMode:true,
-          }
-        },
-      ]
-    });
-  }
+var testimonial_slider = $('#testimonial-slider');
+if (testimonial_slider.length > 0) {
+  testimonial_slider.slick({
+    infinite: true,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+    dots: true,
+    arrows: false,
+    autoplay: true,
+    autoplaySpeed: 3000, // 3 seconds
+    mobileFirst: true,
+    responsive: [
+      {
+        breakpoint: 767,
+        settings: {
+          slidesToShow: 1
+        }
+      },
+      {
+        breakpoint: 991,
+        settings: {
+          slidesToShow: 2,
+          centerPadding: '0',
+          centerMode: true
+        }
+      },
+      {
+        breakpoint: 1200,
+        settings: {
+          slidesToShow: 3,
+          centerPadding: '0',
+          centerMode: true
+        }
+      }
+    ]
+  });
+}
+
 
   /*(7) Client Slider
    ========================================================================== */
